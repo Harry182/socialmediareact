@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: var(--baseColor);
+  background: var(--baseBackgroud);
+}
+:root {
+  --lime-green: hsl(163, 72%, 41%);
+  --bright-red: hsl(356, 69%, 56%);
+  --twitter: hsl(195, 100%, 50%);
+  --facebook: hsl(217, 89%, 53%);
+  --instagram-1: hsl(37, 97%, 70%);
+  --instagram-2: hsl(329, 70%, 58%);
+  --youTube: hsl(348, 97%, 39%);
+  --gray: #57585c;
+  --cardGray: #f0f3fa;
+  --lightGray: #f8f9fe;
+  --cardTitle: #6f717e;
+  --baseBackgroud: white;
+  --baseColor: #202124;
+  --switchSpinner: white;
+  --switch: #57585c;
+}
+.wrapper {
+  padding: 0 30px;
+}
+.grid {
+  display: grid;
+  grid-row-gap: 25px;
+}
+
+@media screen and (min-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 25px;
+  }
+  .wrapper {
+    max-width: 1440px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
