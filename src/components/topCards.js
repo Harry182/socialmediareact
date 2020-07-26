@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./card";
+import "./css/topCard.css";
 
 const cardListData = [
   {
@@ -29,8 +30,8 @@ const cardListData = [
   {
     userName: "gopDev_",
     id: 4,
-    followers: "12k",
-    totalFollower: -50,
+    followers: "18k",
+    totalFollower: 30,
     icon: "images/icons8-youtube-play.svg",
     name: "youtube",
   },
@@ -51,9 +52,11 @@ function TopCardList() {
                 icon={icon}
               />
             )
-          )} */}
+          )}  */}
+
           {cardListData.map((cardData) => (
             <Card key={cardData.id} {...cardData} />
+
             // con spread_operator
           ))}
         </div>
