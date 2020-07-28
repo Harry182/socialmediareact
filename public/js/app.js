@@ -19,14 +19,6 @@ checkbox.addEventListener("change", function (event) {
   if (this.checked) {
     document.body.classList.remove("is-light-mode");
     document.body.classList.add("is-dark-mode");
-    // --cardGray: #252b43;
-    // --baseBackgroud: #1d2029;
-    // --baseColor: rgb(238, 236, 236);
-    // --gray: #8088ad;
-    // --lightGray: #1d2029;
-    // --cardTitle: #8088ad;
-    // --switchSpinner: #282943;
-    // --switch: linear-gradient(to right, #4796d2 0%, #37ce8f 100%);
   } else {
     document.body.classList.remove("is-dark-mode");
     document.body.classList.add("is-light-mode");
